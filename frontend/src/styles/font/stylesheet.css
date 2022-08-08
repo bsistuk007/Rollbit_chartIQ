@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-ThIt.eot');
+    src: local('Geogrotesque Wide Thin Italic'), local('GeogrotesqueWide-ThIt'),
+        url('GeogrotesqueWide-ThIt.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-ThIt.woff2') format('woff2'),
+        url('GeogrotesqueWide-ThIt.woff') format('woff'),
+        url('GeogrotesqueWide-ThIt.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-Md.eot');
+    src: local('Geogrotesque Wide Medium'), local('GeogrotesqueWide-Md'),
+        url('GeogrotesqueWide-Md.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-Md.woff2') format('woff2'),
+        url('GeogrotesqueWide-Md.woff') format('woff'),
+        url('GeogrotesqueWide-Md.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide Semi';
+    src: url('GeogrotesqueWide-SmBd.eot');
+    src: local('Geogrotesque Wide Semi Bold'), local('GeogrotesqueWide-SmBd'),
+        url('GeogrotesqueWide-SmBd.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-SmBd.woff2') format('woff2'),
+        url('GeogrotesqueWide-SmBd.woff') format('woff'),
+        url('GeogrotesqueWide-SmBd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide Ultra';
+    src: url('GeogrotesqueWide-UltLt.eot');
+    src: local('Geogrotesque Wide Ultra Light'), local('GeogrotesqueWide-UltLt'),
+        url('GeogrotesqueWide-UltLt.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-UltLt.woff2') format('woff2'),
+        url('GeogrotesqueWide-UltLt.woff') format('woff'),
+        url('GeogrotesqueWide-UltLt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-Bd.eot');
+    src: local('Geogrotesque Wide Bold'), local('GeogrotesqueWide-Bd'),
+        url('GeogrotesqueWide-Bd.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-Bd.woff2') format('woff2'),
+        url('GeogrotesqueWide-Bd.woff') format('woff'),
+        url('GeogrotesqueWide-Bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-BdIt.eot');
+    src: local('Geogrotesque Wide Bold Italic'), local('GeogrotesqueWide-BdIt'),
+        url('GeogrotesqueWide-BdIt.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-BdIt.woff2') format('woff2'),
+        url('GeogrotesqueWide-BdIt.woff') format('woff'),
+        url('GeogrotesqueWide-BdIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-Th.eot');
+    src: local('Geogrotesque Wide Thin'), local('GeogrotesqueWide-Th'),
+        url('GeogrotesqueWide-Th.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-Th.woff2') format('woff2'),
+        url('GeogrotesqueWide-Th.woff') format('woff'),
+        url('GeogrotesqueWide-Th.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide Ultra';
+    src: url('GeogrotesqueWide-UltLtIt.eot');
+    src: local('Geogrotesque Wide Ultra Light Italic'), local('GeogrotesqueWide-UltLtIt'),
+        url('GeogrotesqueWide-UltLtIt.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-UltLtIt.woff2') format('woff2'),
+        url('GeogrotesqueWide-UltLtIt.woff') format('woff'),
+        url('GeogrotesqueWide-UltLtIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-MdIt.eot');
+    src: local('Geogrotesque Wide Medium Italic'), local('GeogrotesqueWide-MdIt'),
+        url('GeogrotesqueWide-MdIt.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-MdIt.woff2') format('woff2'),
+        url('GeogrotesqueWide-MdIt.woff') format('woff'),
+        url('GeogrotesqueWide-MdIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-LtIt.eot');
+    src: local('Geogrotesque Wide Light Italic'), local('GeogrotesqueWide-LtIt'),
+        url('GeogrotesqueWide-LtIt.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-LtIt.woff2') format('woff2'),
+        url('GeogrotesqueWide-LtIt.woff') format('woff'),
+        url('GeogrotesqueWide-LtIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-Lt.eot');
+    src: local('Geogrotesque Wide Light'), local('GeogrotesqueWide-Lt'),
+        url('GeogrotesqueWide-Lt.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-Lt.woff2') format('woff2'),
+        url('GeogrotesqueWide-Lt.woff') format('woff'),
+        url('GeogrotesqueWide-Lt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide Semi';
+    src: url('GeogrotesqueWide-SmBdIt.eot');
+    src: local('Geogrotesque Wide Semi Bold Italic'), local('GeogrotesqueWide-SmBdIt'),
+        url('GeogrotesqueWide-SmBdIt.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-SmBdIt.woff2') format('woff2'),
+        url('GeogrotesqueWide-SmBdIt.woff') format('woff'),
+        url('GeogrotesqueWide-SmBdIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-Rg.eot');
+    src: local('Geogrotesque Wide'), local('GeogrotesqueWide-Rg'),
+        url('GeogrotesqueWide-Rg.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-Rg.woff2') format('woff2'),
+        url('GeogrotesqueWide-Rg.woff') format('woff'),
+        url('GeogrotesqueWide-Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geogrotesque Wide';
+    src: url('GeogrotesqueWide-RgIt.eot');
+    src: local('Geogrotesque Wide Italic'), local('GeogrotesqueWide-RgIt'),
+        url('GeogrotesqueWide-RgIt.eot?#iefix') format('embedded-opentype'),
+        url('GeogrotesqueWide-RgIt.woff2') format('woff2'),
+        url('GeogrotesqueWide-RgIt.woff') format('woff'),
+        url('GeogrotesqueWide-RgIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

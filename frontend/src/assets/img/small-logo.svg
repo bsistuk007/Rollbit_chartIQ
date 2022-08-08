@@ -1,0 +1,27 @@
+<svg width="54px" height="46px" viewBox="0 0 54 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rollbit</title>
+    <defs>
+        <path d="M25.8641975,7 C33.1189009,7 39,12.8202983 39,20 C39,27.1797017 33.1189009,33 25.8641975,33 C25.5339131,33 25.2064758,32.9879363 24.8823109,32.9642297 L1,32.0714286 L23.5185185,30.4 L17.8793746,30.323342 C16.253627,29.0898792 14.9276672,27.4887635 14.0283661,25.6455543 L5,25 L13.4974783,24.3934272 C12.9996382,23.0211053 12.7283951,21.5419013 12.7283951,20 C12.7283951,18.4584758 12.9995056,16.9796182 13.4971131,15.6075796 L5,15 L14.0278807,14.3554407 C14.9277384,12.5106884 16.254952,10.9083896 17.8823496,9.6744015 L23.395,9.601 L1,7.92857143 L24.8603048,7.03739787 C25.191655,7.01261602 25.5264376,7 25.8641975,7 Z M25.8641975,15.125 C23.1436838,15.125 20.9382716,17.3076118 20.9382716,20 C20.9382716,22.6923882 23.1436838,24.875 25.8641975,24.875 C28.5847113,24.875 30.7901235,22.6923882 30.7901235,20 C30.7901235,17.3076118 28.5847113,15.125 25.8641975,15.125 Z" id="path-1Rbt"></path>
+        <filter x="-39.5%" y="-57.7%" width="178.9%" height="215.4%" filterUnits="objectBoundingBox" id="filter-2Rbt">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.365985577   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-28.9%" y="-42.3%" width="157.9%" height="184.6%" filterUnits="objectBoundingBox" id="filter-3Rbt">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="0.5" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.989929373   0 0 0 0 0.224561738  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="SymbolsRbt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Game-Categories-/-RollbitRbt" transform="translate(5.000000, 3.000000)" fill-rule="nonzero">
+            <g id="Combined-ShapeRbt">
+                <use fill="black" fillOpacity="1" filter="url(#filter-2Rbt)" xlink:href="#path-1Rbt"></use>
+                <use fill="#FFFFC1" xlink:href="#path-1Rbt"></use>
+                <use fill="black" fillOpacity="1" filter="url(#filter-3Rbt)" xlink:href="#path-1Rbt"></use>
+            </g>
+        </g>
+    </g>
+</svg>

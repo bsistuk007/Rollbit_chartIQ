@@ -1,0 +1,94 @@
+.modal-content {
+    border-radius: 12px;
+}
+
+.login-register-nav-btn {
+    font-style: italic;
+    cursor: default;
+    background: rgba(203, 215, 255, 0.03);
+    color: rgb(255, 244, 207);
+    text-shadow: rgb(255 93 0) 0px 0px 10px;
+}
+
+.register-modal-img {
+    background-image: url("./../../assets/img/register.webp");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center bottom;
+    border-radius: 0px 10px 10px 0px;
+    position: relative;
+}
+
+.modal-close-btn {
+    float:right;
+    padding: calc(var(--bs-modal-header-padding-y)*0.5) calc(var(--bs-modal-header-padding-x)*0.5);
+    margin: calc(var(--bs-modal-header-padding-y)*-0.5) calc(var(--bs-modal-header-padding-x)*-0.5) calc(var(--bs-modal-header-padding-y)*-0.5) auto;
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 15px;
+    color: #fff;
+    background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E") 50%/1em auto no-repeat;
+    border: 0;
+
+}
+
+.login-register-set {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: all 0.1s ease 0s;
+    height: 40px;
+    min-height: 40px;
+    padding: 0px 14px;
+    border-radius: 8px;
+    color: rgb(104, 109, 123);
+    font-size: 16px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    cursor: pointer;
+    user-select: none;
+}
+
+.login-register-set-active {
+    cursor: default;
+    background: rgba(203, 215, 255, 0.03);
+    color: rgb(255, 244, 207);
+    text-shadow: rgb(255 93 0) 0px 0px 10px;
+}
+
+.wallet-button {
+    color: rgb(177, 182, 198);
+    justify-content: center;
+    white-space: nowrap;
+    height: 48px;
+    border-radius: 8px;
+    width: 100%;
+    background-color: rgba(203,215,255,.1);
+    border: 3px solid transparent;
+
+}
+
+.form-input-login {
+    outline: none;
+    border: none;
+    background: rgb(20, 22, 34);
+    font-size: 16px;
+}
+
+/* .required-tag {
+    color: rgb(255, 73, 73);
+    vertical-align: middle;
+    font-size: 12px;
+} */
+
+.form-control:focus {
+    color: #fff;
+    background-color: rgb(20, 22, 34);
+    border-color: yellow;
+    outline: 0;
+    box-shadow: 0 0 0 1px yellow;    
+}
+

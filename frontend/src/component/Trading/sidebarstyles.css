@@ -1,0 +1,26 @@
+.coin-price-info-sidebar{
+    background: none;
+    position: fixed;
+    top: 70px;
+}
+/* .coin-price-info-sidebar * {
+    border-radius: 10px !important; */
+/* } */
+
+.coin-price-info-sidebar-expanded {
+    background: rgb(31, 33, 46);
+    opacity: 0.8;
+}
+
+/* .coin-price-info-sidebar-expanded * {
+    border-radius: 10px !important;
+} */
+
+/* .sidenav---sidenav---_2tBP * {
+    border-radius: 10px;
+} */
+
+.sidenav---sidenav---_2tBP *, .sidenav---sidenav---_2tBP *:before, .sidenav---sidenav---_2tBP *:after {
+    box-sizing: inherit;
+    border-radius: 10px;
+}

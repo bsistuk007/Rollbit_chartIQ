@@ -1,0 +1,37 @@
+cq-lookup {
+    margin-top: -20px;
+}
+
+.chartContainer {
+    background: rgb(26, 29, 41) !important;
+}
+
+.ciq-nav {
+    background: rgb(26, 29, 41) !important;
+    border: none !important;
+}
+
+.ciq-night cq-chart-title {
+    background: rgb(26, 29, 41) !important;
+}
+
+cq-context.ciq-night input, [cq-context].ciq-night input, cq-dialog.ciq-night input, .ciq-night .share-copy .share-link-div {
+    background-color: rgb(26, 29, 41) !important;
+}
+
+.ciq-night .ciq-footer {
+    border-top: none;
+    background: rgb(26, 29, 41);
+}
+
+/* .ciq-search {
+    display: none;
+} */
+
+/* .ciq-toggles {
+    display: none;
+} */
+/* 
+.ciq-period{
+    display: none;
+} */

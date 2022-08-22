@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { useHistory } from 'react-router-dom';
 import Bet from "../Bet/bet";
+// import TradingChart from "../Chart/chart";
 import TradingChart from "../Chart/chart";
 import StatisticsData from "../Statistics/statisticdata";
 import CoinImg from "./coinimg";
@@ -10,6 +11,10 @@ import { useDispatch, useSelector} from "react-redux";
 import SideNavBar from "./sidebar";
 import IntervalSetting from "./intervalsetting";
 import ChartSetting from "./chartsetting";
+import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import IpRestrictModal from "../IpRestrict";
 // import TradingChartDemo from "../Chart/chartdemo";
 
 
@@ -23,6 +28,7 @@ function Trading() {
     const { selectionCoinType } = useSelector(state => state.coin);
     const coinPrice = useSelector((state) => state.coinPrice);
     const { bitcoinPrice, bitcoinPriceUpDown, bitcoinHighPrice, bitcoinLowPrice, bitcoinVolume, ethereumPrice, ethereumPriceUpDown,ethereumHighPrice, ethereumLowPrice, ethereumVolume, solanaPrice, solanaPriceUpDown, solanaHighPrice, solanaLowPrice, solanaVolume, apePrice, apePriceUpDown, apeHighPrice, apeLowPrice, apeVolume, adaPrice, adaPriceUpDown, adaHighPrice, adaLowPrice, adaVolume } = coinPrice;
+    const [ipModalShow, setIpModalShow] = useState(false);
     // const { bitcoinPrice, bitcoinPriceUpDown, ethereumPrice, ethereumPriceUpDown,solanaPrice, solanaPriceUpDown } = coinPrice;
     const history = useHistory();
     
@@ -110,12 +116,40 @@ function Trading() {
         history.push(`/price-formulation`);
     }
 
+    const getIPData = async()=>{
+        const res = await axios.get('https://geolocation-db.com/json/')
+        console.log(res);
+        var country_code = res.data.country_code;
+        if(country_code == "AU" || country_code == "US") {
+
+        } else {
+            setIpModalShow(true);
+        }
+        
+    }
+
+    const notify = (message) => toast.info(message, {
+        position: "top-center",
+        autoClose: 10000,
+        theme: "dark",
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+
+    useEffect(()=>{
+        getIPData()
+    }, [])
+
     return (
         <>
+            <IpRestrictModal show={ipModalShow} setIpModalShow={setIpModalShow}></IpRestrictModal>
             <SideNavBar></SideNavBar>
             <div className="block md:flex">
                 <div className="chart flex-1 pl-4">
-                    <div className="flex justify-between">
+                    <div className="flex justify-between overflow-auto">
                         <div className="flex flex-wrap items-center ">
                             <div className="flex items-center mb-3">
                                 <div>

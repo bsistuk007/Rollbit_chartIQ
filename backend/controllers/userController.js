@@ -390,7 +390,6 @@ const placeBet = asyncHandler(async (req, res) => {
     throw new Error("User not found");
   }
   try{
-    console.log(req.body)
     var betDoc = { 
       user_id: req.user._id,
       username: user.username,
@@ -403,7 +402,11 @@ const placeBet = asyncHandler(async (req, res) => {
       exitPrice: 0,
       PnL: 0,
       RoI: 0,
-      betState: 'active'
+      betState: 'active',
+      autoStopProfitState: req.body.autoStopProfitState,
+      autoStopLossState: req.body.autoStopLossState,
+      autoStopProfitAmount: req.body.autoStopProfitAmount,
+      autoStopLossAmount: req.body.autoStopLossAmount,      
     }
     const bet = await Bet.create(betDoc);
     const balance = user.balance - parseFloat(req.body.wager);

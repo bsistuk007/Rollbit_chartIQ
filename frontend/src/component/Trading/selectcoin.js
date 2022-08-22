@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
-import Form from 'react-bootstrap/Form';
-import btcimg from './../../assets/img/bitcoin.png';
-import ethimg from './../../assets/img/ethereum.png';
-import ltcimg from './../../assets/img/litecoin.png';
-import dogeimg from './../../assets/img/dogecoin.png';
+// import Form from 'react-bootstrap/Form';
+// import btcimg from './../../assets/img/bitcoin.png';
+// import ethimg from './../../assets/img/ethereum.png';
+// import ltcimg from './../../assets/img/litecoin.png';
+// import dogeimg from './../../assets/img/dogecoin.png';
 import {useSelector, useDispatch } from "react-redux";
 import { SET_SELECTION_TRADING_COIN_TYPE } from "../../configs";
 import CoinButton from './coinbutton';

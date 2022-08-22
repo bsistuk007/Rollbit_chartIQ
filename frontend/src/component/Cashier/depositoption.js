@@ -4,6 +4,7 @@ import { useSelector} from "react-redux";
 // import { SET_SELECTION_CASHIER_TYPE } from "../../configs";
 // import SvgBack from '../Svg/svgback';
 import qrbitcoinimg from './../../assets/img/qrbitcoin.png';
+import QRCode from "react-qr-code";
 // import coinimg from './../../assets/img/coin.webp';
 // import bitcoinimg from './../../assets/img/bitcoin.png';
 // import ethereumimg from './../../assets/img/ethereum.png';
@@ -50,7 +51,14 @@ function DepositOption(props) {
                     <div className="flex flex-col sm:flex-row sm:text-[16px]">
                         <div>Send the amount of {depositCoinType} of your choice to the following address to receive the equivalent in Coins.
                         </div>
-                        <img src={qrbitcoinimg} alt="Bitcoin" className="ml-4 min-w-[173px] w-[173px]"/>
+                        {/* <img src={qrbitcoinimg} alt="Bitcoin" className="ml-4 min-w-[173px] w-[173px]"/> */}
+                        {depositCoinAddress ? (
+                            <div className="ml-4 min-w-[173px] w-[173px]">
+                                <QRCode value={depositCoinAddress} size={173}></QRCode>
+                            </div>
+                        ) : (
+                            <></>
+                        )}
                     </div>
                     <p className="uppercase italic my-3">Your personal {props.depositCoin} deposit address</p>
                     <div className="setting-email-box">

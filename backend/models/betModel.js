@@ -44,10 +44,28 @@ const betSchema = mongoose.Schema(
     ROI: {
       type: Number,
     },
-    betState: { //active bet/cashed out/busted
+    betState: { //active /cashed out/busted / stop loss/ take profiet
       type: String,
       required: true,
       default: "active"
+    },
+    autoStopProfitState: { // auto bet flag
+      type: Boolean,
+      requred: true,
+      default: false
+    },
+    autoStopLossState: {
+      type: Boolean,
+      requred: true,
+      default: false
+    },
+    autoStopProfitAmount: {
+      type: Number,
+      default: 0
+    },
+    autoStopLossAmount:{
+      type: Number,
+      default: 0
     },
     dateTime: {
       type: Date,

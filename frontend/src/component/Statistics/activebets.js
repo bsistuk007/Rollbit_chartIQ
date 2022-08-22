@@ -6,7 +6,11 @@ import BetCoinImg from "./betcoinimg";
 import axios from "axios";
 import FormData from "form-data";
 import { ToastContainer, toast } from 'react-toastify';
-
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css'; 
+import './confirmalert.css';
+import SvgClose from "../Svg/svgclose";
+import SvgAutoBetSetting from "../Svg/svgautobetsetting";
 
 function ActiveBets() {
     const dispatch = useDispatch();
@@ -32,7 +36,43 @@ function ActiveBets() {
         setActiveBetData(activeBetRecord);
     }, [activeBetRecord])
 
-
+    const confrimCashOut = (betId) => {
+        confirmAlert({
+            customUI: ({ onClose }) => {
+              return (
+                <div className='custom-confirm-alert'>
+                    <div className="flex justify-between">
+                        <div>
+                            <h1>CASH OUT</h1>
+                        </div>
+                        <div onClick={onClose}>
+                            <SvgClose></SvgClose>
+                        </div>
+                    </div>
+                    <div className="text-[16px] mb-4">
+                        <p>Are you sure you want to cash out?</p>
+                    </div>
+                    <div className="flex confirm-alert-bottom">
+                        <div className="mr-4">
+                            <button className="confirm-alert-btn" onClick={onClose}>
+                                No
+                            </button>
+                        </div>
+                        <div>
+                            <button className="cashout-btn confirm-alert-btn" onClick = {()=> {
+                                    onClose();
+                                    cashOut(betId)
+                                    // cashOut(bet.id)
+                                }}>
+                                    CASH OUT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+              );
+            }
+          });
+    }
 
     const cashOut = (async (betId) => {
         const formData = new FormData();
@@ -56,6 +96,10 @@ function ActiveBets() {
                 break;
             }    
         }
+        if(PnL == '') {
+            notify('fail cashout')
+            return;
+        }
         var params = {
             betId: betId,
             ROI: ROI,
@@ -72,7 +116,6 @@ function ActiveBets() {
           };
         try {
             const res = await axios.put(`/api/users/cashout`, params, config);
-            console.log('cash out res ', res) 
             if(res.data.status == 'success') {
                 notify(message)
                 dispatch(getUserBalance());
@@ -167,9 +210,18 @@ function ActiveBets() {
                                             </div>
                                         </td>
                                         <td className="table-data-content cursor-default">
-                                            <button className="cashout-btn" onClick = {()=> {cashOut(bet.id)}}>
-                                                CASH OUT
-                                            </button>
+                                            <div className="flex">
+                                                <div className="mr-2">
+                                                    <button className="cashout-btn" onClick = {()=> {
+                                                        confrimCashOut(bet.id)
+                                                        // cashOut(bet.id)
+                                                    }}>
+                                                        CASH OUT
+                                                    </button>
+
+                                                </div>
+                                                <SvgAutoBetSetting lossColor={bet.autoStopLossState} profitColor={bet.autoStopProfitState}></SvgAutoBetSetting>
+                                            </div>
                                         </td>
                                     </tr>
                                 )

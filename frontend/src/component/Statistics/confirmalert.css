@@ -1,0 +1,26 @@
+.react-confirm-alert-overlay{
+    background: rgba(10, 10, 10, 0.7);
+}
+
+.custom-confirm-alert {
+    background: rgb(31, 33, 46);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.confirm-alert-bottom {
+    background: rgba(203, 215, 255, 0.03);
+    padding: 24px 32px;
+    margin: 32px -32px -32px;
+    gap: 16px;
+}
+
+.confirm-alert-btn {
+    height: 40px;
+    font-size: medium;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    background: rgba(203, 215, 255, 0.075);
+    border-radius: 8px;
+
+}

@@ -4,6 +4,7 @@ import cashierSelectionReducer from './cashierSelectionReducer';
 import coinSelectionReducer from './coinSelectionReducer';
 import coinPriceReducer from './coinPriceReducer';
 import betRecordReducer from './betRecordReducer';
+import statisticsSelectionReducer from './statisticsSelectionReducer';
 import {
     userLoginReducer,
     userRegisterReducer,
@@ -32,6 +33,7 @@ const rootReducer = combineReducers({
     userBalance: userBalanceReducer,
     coinPrice: coinPriceReducer,
     bet: betRecordReducer,
+    statistics: statisticsSelectionReducer
 })
 
 export default rootReducer

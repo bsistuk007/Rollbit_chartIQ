@@ -1,0 +1,15 @@
+#myProgress {
+    width: 100%;
+    float: right;
+    background-color: #04AA6D;
+    border-radius: 999px;
+  }
+  
+  #myBar {
+    float: right;
+    width: 0%;
+    height: 10px;
+    border-radius: 999px;
+    background-color: #ddd;
+    
+  }

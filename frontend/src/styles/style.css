@@ -456,12 +456,22 @@ table, tbody, th, tr, td {
     border: 1px solid rgb(114, 242, 56);
 }
 
+.bet-auto-profit-input-select {
+    border: 1px solid rgb(114, 242, 56);
+    box-shadow: rgb(114 242 56) 0px 0px 10px 0px;
+}
+
 .bet-auto-loss-input, .bet-auto-loss-input input {
     color: rgb(255, 73, 73) !important;
 }
 
 .bet-auto-loss-input:focus-within {
     border: 1px solid rgb(255, 73, 73);
+}
+
+.bet-auto-loss-input-select {
+    border: 1px solid rgb(255, 73, 73);
+    box-shadow: rgb(255 73 73) 0px 0px 10px 0px;
 }
 
 
@@ -911,6 +921,25 @@ a:hover {
     background: rgba(114, 242, 56, 0.13);
 }
 
+.auto-bet-setting svg:first-of-type {
+    position: relative;
+    top: 4px;
+    left: 2px;
+}
+
+.auto-bet-setting svg:last-of-type {
+    position: relative;
+    bottom: 4px;
+    right: 2px;
+}
+
+.auto-bet-setting-svg {
+    fill: currentcolor;
+    width: 12px;
+    min-width: 12px;
+    height: auto;
+}
+
 @media (min-width: 500px) {
     .default-btn {
         letter-spacing: 0px;
@@ -938,6 +967,10 @@ a:hover {
     .default-btn {
         letter-spacing: 0px;
         font-size: 14px;
+    }
+
+    .modal-sm {
+        max-width: 300px !important;
     }
 }
 

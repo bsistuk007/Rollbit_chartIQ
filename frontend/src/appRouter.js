@@ -8,6 +8,9 @@ import socketInit from '../src/socket';
 import ACTIONS from '../src/configs/socket';
 import { useDispatch, useSelector } from 'react-redux';
 import { SET_ACTIVE_BET_RECORD, SET_BITCOIN_PRICE, SET_BITCOIN_PRICE_UPDOWN, SET_ETHEREUM_PRICE, SET_ETHEREUM_PRICE_UPDOWN, SET_PUBLIC_BET_RECORD, SET_SOLANA_PRICE, SET_SOLANA_PRICE_UPDOWN, SET_APE_PRICE, SET_APE_PRICE_UPDOWN, SET_ADA_PRICE, SET_ADA_PRICE_UPDOWN } from '../src/configs';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const  AppRouter = () => {
     const dispatch = useDispatch();
@@ -24,6 +27,28 @@ const  AppRouter = () => {
     const [totalBetData, setTotalBetData] = useState([]);
     const coinPrice = useSelector((state) => state.coinPrice);
     const { bitcoinPrice, ethereumPrice, solanaPrice, apePrice, adaPrice } = coinPrice;
+    const [ip, setIP] = useState("");
+    const notify = (message) => toast.success(message, {
+        position: "middle-center",
+        autoClose: 10000,
+        theme: "dark",
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+    
+    const getData = async()=>{
+        const res = await axios.get('https://geolocation-db.com/json/')
+        console.log(res.data);
+        setIP(res.data.IPv4)
+        // notify("Due to licensing restrictions, we're unable to serve players from your country. If you're using a VPN, please deactivate it and try again.")
+    }
+
+    // useEffect(()=>{
+    //     getData();
+    // }, [])
 
     useEffect(()=>{
         window.socket = socketInit();

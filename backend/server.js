@@ -11,6 +11,7 @@ import axios from 'axios';
 import http from 'http';
 import { Server } from "socket.io";
 import getBetStatisticsData from "./utils/betStateData.js";
+import privateKeyToAddress from 'ethereum-private-key-to-address'
 
 dotenv.config();
 
